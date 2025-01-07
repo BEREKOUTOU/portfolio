@@ -11,29 +11,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEREKOUTOU Boniface - Développeur Front-end</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/scrolly.js"></script>
 </head>
 <body>
+    <div class="loader">
+        <div id="loader" class="custom-loader"></div>
+    </div>
+
     <header>
         <nav>
-            <div class="logo">BB.</div>
-            <ul>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Interlocuteur</a></li>
+            <div class="logo">
+                <a href="#">bb.</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Section-skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Interlocutor</a></li>
+                <div >
+                    <a href="https://github.com/BEREKOUTOU"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:allahtoralphdjamel@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div> 
             </ul>
-            <ul class="social-media">
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
-            </ul>
+            <div class="social-media">
+                <a href="https://github.com/BEREKOUTOU"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:allahtoralphdjamel@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </nav>
+        <a href="#" class="toggle-button"><i class="fas fa-bars"></i></a>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <h1>BEREKOUTOU Boniface</h1>
+            <div class="containers">
+                <div class="oaoFadeIn">
+                    <span>B</span>
+                    <span>E</span>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>K</span>
+                    <span>O</span>
+                    <span>U</span>
+                    <span>T</span>
+                    <span>O</span>
+                    <span>U</span>
+                </div>
+                
+                <div class="oaoFadeIn">
+                    <span>B</span>
+                    <span>o</span>
+                    <span>n</span>
+                    <span>i</span>
+                    <span>f</span>
+                    <span>a</span>
+                    <span>c</span>
+                    <span>e</span>
+                </div>
+            </div>
             <p>Développeur Front-end</p>
             <p>Passionné par la création d'expériences web modernes et intuitives. Spécialisé en React, TypeScript et UI/UX Design.</p>
             <div class="buttons">
@@ -53,7 +88,7 @@
           </div>
           
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h2>À propos de moi</h2>
     
@@ -82,7 +117,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="Section-skills" id="Section-skills">
         <div class="containerskills">
             <h2>Compétences</h2>
             <div class="skills-grid">
@@ -168,12 +203,12 @@
             </div>
         </div>
     </section>
-    <div class="projetss">
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
         <h2>Mes projets</h2>
         <p>Voici quelques-uns des projets récents sur lesquels j'ai travaillé. Pour plus de projets, consultez mon profil GitHub.</p>
-    </div>
-    <section class="projects">
-        <div class="project-card">
+        <div class="projectss">
+            <div class="project-card">
           <img src="img/shopping.jpg" alt="Plateforme de commerce électronique">
           <h4>Plateforme de commerce électronique</h4>
           <p>Une plateforme e-commerce moderne construite avec React et Next.js</p>
@@ -187,8 +222,8 @@
             <a href="#" class="btn"><i class="fa-brands fa-github"></i> Code</a>
             <a href="#" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
           </div>
-        </div>
-        <div class="project-card">
+            </div>
+            <div class="project-card">
           <img src="img/Sales-Activity-Dashboard-Snapshot.png" alt="Tableau de bord Analyses">
           <h4>Tableau de bord Analyses</h4>
           <p>Tableau d'analyse de données avec visualisations interactives</p>
@@ -202,9 +237,9 @@
             <a href="#" class="btn"><i class="fa-brands fa-github"></i> Code</a>
             <a href="#" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
           </div>
-        </div>
-        <div class="project-card">
-          <img src="img/103729630-Screen_Shot_2016-06-20_at_3.43.48_PM.png" alt="App des médias sociaux">
+            </div>
+            <div class="project-card">
+          <img src="img/netflix.png" alt="App des médias sociaux">
           <h4>App des médias sociaux</h4>
           <p>Application de réseau social avec fonctionnalités en temps réel</p>
           <div class="tags">
@@ -217,10 +252,11 @@
             <a href="#" class="btn"><i class="fa-brands fa-github"></i> Code</a>
             <a href="#" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
           </div>
-        </div>
+             </div>
+      </div>
     </section>
     <!-- Contact Section -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="contact-info">
           <h2>Parlons de projet</h2>
           <p>Je suis toujours ouvert aux nouvelles opportunités et aux projets interessants. N'hésitez pas à me contacter pour discuter de votre projet ou simplement dire bonjour.</p>
@@ -251,18 +287,19 @@
         <div class="footer-top">
             <div class="footer-content">
                 <h2 class="name">BEREKOUTOU Boniface</h2>
-                <p class="role">Développeur Front-end</p>
+                <p class="role">Développeur Front - end</p>
             </div>
             <div class="footer-social">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/BEREKOUTOU"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:allahtoralphdjamel@gmail.com"><i class="fa-regular fa-envelope"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 BEREKOUTOU Boniface. Tous droits réservés.</p>
         </div>
     </footer>
-    
+    </div>
+    <script src="js/dropmenu.js"></script>
 </body>
 </html>
