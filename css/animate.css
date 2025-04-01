@@ -1,0 +1,16 @@
+/* animate__slideInUp*/
+.back-to-top {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: animate__slideInUp;
+}
+@keyframes animate__slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
