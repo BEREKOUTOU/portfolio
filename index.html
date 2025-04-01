@@ -7,10 +7,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="author" content="BEREKOUTOU Boniface">
     <meta name="description" content="BEREKOUTOU Boniface - Développeur Front-end">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEREKOUTOU Boniface - Développeur Front-end</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
     <div class="loader">
@@ -23,22 +25,40 @@
                 <a href="#">bb.</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#Section-skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Interlocutor</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#Section-skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Interlocuteur</a></li>
                 <div >
                     <a href="https://github.com/BEREKOUTOU"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:allahtoralphdjamel@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div> 
+                    <a href="mailto:allahtoralphdjamel@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                </div>
             </ul>
             <div class="social-media">
                 <a href="https://github.com/BEREKOUTOU"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:allahtoralphdjamel@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:allahtoralphdjamel@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <!--settheme-->
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
             </div>
         </nav>
+        <!--setlanguage-->
+        <button type="button" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="language-select" class="language-toggle">
+            <i class="fa-solid fa-language"></i>
+            <span id="language-select">Français</span>
+            <option role="listbox" class="language-options">
+                <li role="option" value="fr"><img src="img/icons/fr.png" alt="Français"> Français</li>
+                <li role="option" value="en"><img src="img/icons/united-kingdom.png" alt="English"> English</li>
+                <li role="option" value="es"><img src="img/icons/italy.png" alt="Español"> Español</li>
+                <li role="option" value="ko"><img src="img/icons/south-korea.png" alt="Korean"> Korean</li>
+                <li role="option" value="ja"><img src="img/icons/japan.png" alt="Japanês"> Japanês</li>
+            </option>
+            <span class="arrow"></span>
+        </button>
         <a href="#" class="toggle-button"><i class="fas fa-bars"></i></a>
     </header>
 
@@ -72,8 +92,8 @@
             <p>Développeur Front-end</p>
             <p>Passionné par la création d'expériences web modernes et intuitives. Spécialisé en React, TypeScript et UI/UX Design.</p>
             <div class="buttons">
-                <a href="#" class="primary">Me contacter<i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="secondary">Voir mes projets</a>
+                <a href="#contact" class="primary">Me contacter<i class="fas fa-arrow-right"></i></a>
+                <a href="#projects" class="secondary">Voir mes projets</a>
             </div>
         </div>
         <div class="flip-box">
@@ -88,7 +108,7 @@
           </div>
           
     </section>
-    <section class="about" id="about">
+    <section class="about scroll" id="about">
         <div class="container">
             <h2>À propos de moi</h2>
     
@@ -261,8 +281,8 @@
           <h2>Parlons de projet</h2>
           <p>Je suis toujours ouvert aux nouvelles opportunités et aux projets interessants. N'hésitez pas à me contacter pour discuter de votre projet ou simplement dire bonjour.</p>
           <ul>
-            <li><span><i class="fa-solid fa-envelope"></i></span> allahtoralphdjamel@gmail.com</li>
-            <li><span><i class="fa-solid fa-phone"></i></span> +33 07 75 95 44 11</li>
+            <li><span><i class="fa-regular fa-envelope"></i></span> allahtoralphdjamel@gmail.com</li>
+            <li><span><i class="fa-solid fa-phone"></i></span> ( +33 ) 07 75 95 44 11</li>
             <li><span><i class="fa-solid fa-location-dot"></i></span> Paris (France)</li>
           </ul>
         </div>
@@ -300,6 +320,11 @@
         </div>
     </footer>
     </div>
+    <!-- Scroll to Top Button -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <!-- Script -->
     <script src="js/dropmenu.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>
