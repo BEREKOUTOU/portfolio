@@ -256,46 +256,46 @@ border-color: var(--border-color-dark);
     width: 180px;
 }
 }
-    /*==hero===*/
-    .hero {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 50px 20px;
-        max-width: 1200px;
-        margin: 20px auto;
-    }
+/*==hero===*/
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
 
-    .hero-content {
-        max-width: 600px;
-    }
+.hero-content {
+    max-width: 600px;
+}
 
-    .containers{
-        flex-wrap: wrap;
-        display: flex;
-        padding: 0;
-        margin: 0;
-    }
-    .containers div{ 
-      display: flex;
-      margin-right: 10px           
-    }
-    .containers .oaoFadeIn{
-        display: flex;
-        padding: 0;
-        margin-bottom: 20px;
-    }
+.containers{
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.containers div{ 
+    display: flex;
+    margin-right: 10px           
+}
+.containers .oaoFadeIn{
+    display: flex;
+    padding: 0;
+    margin-bottom: 20px;
+}
     
-    .oaoFadeIn span{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 40px;
-        margin: 0;
-        padding: 0;
-        font-weight: 700;
+.oaoFadeIn span{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
         
-    }
-    .oaoFadeIn span:nth-child(even) {
+}
+.oaoFadeIn span:nth-child(even) {
         animation-name: leoaoFadeInTop; 
         animation-duration: 2s; 
         animation-timing-function: ease-out; 
