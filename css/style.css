@@ -227,7 +227,6 @@ padding: 8px 16px;
 background: var(--bg-secondary);
 border: 1px solid var(--border-color);
 border-radius: 8px;
-cursor: pointer;
 font-size: 14px;
 color: var(--text-primary);
 }
@@ -248,7 +247,7 @@ display: none;
 position: absolute;
 top: 100%;
 right: 0;
-width: 120px;
+width: 200px;
 background: var(--bg-secondary);
 border: 1px solid var(--border-color);
 border-radius: 8px;
@@ -268,7 +267,7 @@ transition: background-color 0.2s;
 }
 
 .language-options li:hover {
-background-color: var(--hover-color);
+background-color: cadetblue;
 }
 
 .language-options img {
