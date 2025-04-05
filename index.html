@@ -25,10 +25,10 @@
                 <a href="#">bb.</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#Section-skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Interlocuteur</a></li>
+                <li><a href="#about" data-translate="about">À propos</a></li>
+                <li><a href="#Section-skills" data-translate="skills">Compétences</a></li>
+                <li><a href="#projects" data-translate="projects">Projets</a></li>
+                <li><a href="#contact" data-translate="contact">Interlocuteur</a></li>
                 <div >
                     <a href="https://github.com/BEREKOUTOU"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/"><i class="fab fa-linkedin"></i></a>
@@ -89,11 +89,11 @@
                     <span>e</span>
                 </div>
             </div>
-            <p>Développeur Front-end</p>
-            <p>Passionné par la création d'expériences web modernes et intuitives. Spécialisé en React, TypeScript et UI/UX Design.</p>
+            <p data-translate="heroTitle">Développeur Front-end</p>
+            <p data-translate="heroSubtitle">Passionné par la création d'expériences web modernes et intuitives. Spécialisé en React, TypeScript et UI/UX Design.</p>
             <div class="buttons">
-                <a href="#contact" class="primary">Me contacter<i class="fas fa-arrow-right"></i></a>
-                <a href="#projects" class="secondary">Voir mes projets</a>
+                <a href="#contact" class="primary" data-translate="contactBtn">Me contacter<i class="fas fa-arrow-right"></i></a>
+                <a href="#projects" class="secondary" data-translate="projectsBtn">Voir mes projets</a>
             </div>
         </div>
         <div class="flip-box">
@@ -110,39 +110,39 @@
     </section>
     <section class="about scroll" id="about">
         <div class="container">
-            <h2>À propos de moi</h2>
+            <h2 data-translate="aboutTitle">À propos de moi</h2>
     
             <div class="cards">
                 <div class="cardss">
                     <i class="fa-solid fa-code"></i>
-                    <h4>Développement front-end</h4>
-                    <p>Expertise en React, TypeScript et les frameworks modernes pour création des applications web.</p>
+                    <h4 data-translate="aboutCard1">Développement front-end</h4>
+                    <p data-translate="aboutCard1Text">Expertise en React, TypeScript et les frameworks modernes pour création des applications web.</p>
                 </div>
     
                 <div class="cardss">
                     <i class="fa-solid fa-palette"></i>
-                    <h4>Conception UI/UX</h4>
-                    <p>Création d'interfaces utilisateur intuitives et esthétiques avec une attention particulière aux détails.</p>
+                    <h4 data-translate="aboutCard2">Conception UI/UX</h4>
+                    <p data-translate="aboutCard2Text">Création d'interfaces utilisateur intuitives et esthétiques avec une attention particulière aux détails.</p>
                 </div>
     
                 <div class="cardss">
                     <i class="fa-solid fa-globe"></i>
-                    <h4>Réaction du Web</h4>
-                    <p>Développement d'applications web adaptatives pour une expérience optimale sur tous les appareils.</p>
+                    <h4 data-translate="aboutCard3">Réaction du Web</h4>
+                    <p data-translate="aboutCard3Text">Développement d'applications web adaptatives pour une expérience optimale sur tous les appareils.</p>
                 </div>
             </div>
             <div class="Parcours">
-                <h3>Mon Parcours</h3>
-                <p>Avec plus de 1 ans d'expérience dans le développement web, je me spécialise dans la création d'applications web modernes et stratégiques. Ma passion pour les nouvelles technologies et mon souci du détail me permettent de créer des expériences utilisateurs exceptionnelles. Je suis constamment en veille technologique pour offrir les meilleures pratiques et outils du marché.</p>
+                <h3 data-translate="aboutJourney">Mon Parcours</h3>
+                <p data-translate="aboutJourneyText">Avec plus de 1 ans d'expérience dans le développement web, je me spécialise dans la création d'applications web modernes et stratégiques. Ma passion pour les nouvelles technologies et mon souci du détail me permettent de créer des expériences utilisateurs exceptionnelles. Je suis constamment en veille technologique pour offrir les meilleures pratiques et outils du marché.</p>
             </div>
         </div>
     </section>
     <section class="Section-skills" id="Section-skills">
         <div class="containerskills">
-            <h2>Compétences</h2>
+            <h2 data-translate="skillsTitle">Compétences</h2>
             <div class="skills-grid">
                 <div class="card">
-                    <h4>Front - end</h4>
+                    <h4 data-translate="frontEnd">Front - end</h4>
                     <div class="skill">
                         <div class="skill-bar"><span style="width: 90%;"></span></div>
                         <div class="skill-label">React</div>
@@ -162,7 +162,7 @@
                 </div>
     
                 <div class="card">
-                    <h4>Style</h4>
+                    <h4 data-translate="style">Style</h4>
                     <div class="skill">
                         <div class="skill-bar"><span style="width: 90%;"></span></div>
                         <div class="skill-label">CSS à vent de l'aune</div>
@@ -182,7 +182,7 @@
                 </div>
     
                 <div class="card">
-                    <h4>Outils</h4>
+                    <h4 data-translate="tools">Outils</h4>
                     <div class="skill">
                         <div class="skill-bar"><span style="width: 90%;"></span></div>
                         <div class="skill-label">Git</div>
@@ -202,7 +202,7 @@
                 </div>
     
                 <div class="card">
-                    <h4>Conception</h4>
+                    <h4 data-translate="conception">Conception</h4>
                     <div class="skill">
                         <div class="skill-bar"><span style="width: 90%;"></span></div>
                         <div class="skill-label">Figma</div>
@@ -225,13 +225,13 @@
     </section>
     <!-- Projects Section -->
     <section class="projects" id="projects">
-        <h2>Mes projets</h2>
-        <p>Voici quelques-uns des projets récents sur lesquels j'ai travaillé. Pour plus de projets, consultez mon profil GitHub.</p>
+        <h2 data-translate="projectsTitle">Mes projets</h2>
+        <p data-translate="projectsSubtitle">Voici quelques-uns des projets récents sur lesquels j'ai travaillé. Pour plus de projets, consultez mon profil GitHub.</p>
         <div class="projectss">
             <div class="project-card">
           <img src="img/shopping.jpg" alt="Plateforme de commerce électronique">
-          <h4>Plateforme de commerce électronique</h4>
-          <p>Une plateforme e-commerce moderne construite avec React et Next.js</p>
+          <h4 data-translate="projectsCard1">Plateforme de commerce électronique</h4>
+          <p data-translate="projectsCard1Text">Une plateforme e-commerce moderne construite avec React et Next.js</p>
           <div class="tags">
             <span>Réagir</span>
             <span>Next.js</span>
@@ -245,8 +245,8 @@
             </div>
             <div class="project-card">
           <img src="img/Sales-Activity-Dashboard-Snapshot.png" alt="Tableau de bord Analyses">
-          <h4>Tableau de bord Analyses</h4>
-          <p>Tableau d'analyse de données avec visualisations interactives</p>
+          <h4 data-translate="projectsCard2">Tableau de bord Analyses</h4>
+          <p data-translate="projectsCard2Text">Tableau d'analyse de données avec visualisations interactives</p>
           <div class="tags">
             <span>Réagir</span>
             <span>TypeScript</span>
@@ -260,8 +260,8 @@
             </div>
             <div class="project-card">
           <img src="img/netflix.png" alt="App des médias sociaux">
-          <h4>App des médias sociaux</h4>
-          <p>Application de réseau social avec fonctionnalités en temps réel</p>
+          <h4 data-translate="projectsCard3">App des médias sociaux</h4>
+          <p data-translate="projectsCard3Text">Application de réseau social avec fonctionnalités en temps réel</p>
           <div class="tags">
             <span>Réagir</span>
             <span>Base de tir</span>
@@ -278,8 +278,8 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="contact-info">
-          <h2>Parlons de projet</h2>
-          <p>Je suis toujours ouvert aux nouvelles opportunités et aux projets interessants. N'hésitez pas à me contacter pour discuter de votre projet ou simplement dire bonjour.</p>
+          <h2 data-translate="contactTitle">Parlons de projet</h2>
+          <p data-translate="contactText">Je suis toujours ouvert aux nouvelles opportunités et aux projets interessants. N'hésitez pas à me contacter pour discuter de votre projet ou simplement dire bonjour.</p>
           <ul>
             <li><span><i class="fa-regular fa-envelope"></i></span> allahtoralphdjamel@gmail.com</li>
             <li><span><i class="fa-solid fa-phone"></i></span> ( +33 ) 07 75 95 44 11</li>
@@ -287,18 +287,18 @@
           </ul>
         </div>
         <div class="contact-form">
-          <h2>Me Contacter</h2>
+          <h2 data-translate="contactTitle">Me Contacter</h2>
           <form>
-            <label for="name">Nom complet</label>
-            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            <label for="name" data-translate="formName">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" data-translate-placeholder="formName" required>
             
-            <label for="email">Courriel</label>
-            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            <label for="email" data-translate="formEmail">Courriel</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" data-translate-placeholder="formEmail" required>
             
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            <label for="message" data-translate="formMessage">Message</label>
+            <textarea id="message" name="message" placeholder="Votre message" data-translate-placeholder="formMessage" required></textarea>
             
-            <button type="submit">Envoyer le message</button>
+            <button type="submit" data-translate="formSubmit">Envoyer le message</button>
           </form>
         </div>
       </section>
@@ -307,7 +307,7 @@
         <div class="footer-top">
             <div class="footer-content">
                 <h2 class="name">BEREKOUTOU Boniface</h2>
-                <p class="role">Développeur Front - end</p>
+                <p  data-translate="heroTitle" class="role">Développeur Front - end</p>
             </div>
             <div class="footer-social">
                 <a href="https://github.com/BEREKOUTOU"><i class="fa-brands fa-github"></i></a>
@@ -316,7 +316,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 BEREKOUTOU Boniface. Tous droits réservés.</p>
+            <p data-translate="footerText">&copy; 2024 BEREKOUTOU Boniface. Tous droits réservés.</p>
         </div>
     </footer>
     </div>
