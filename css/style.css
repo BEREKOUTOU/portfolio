@@ -245,10 +245,10 @@ margin-left: 8px;
 .language-options {
 display: none;
 position: absolute;
-top: 100%;
+top: 150%;
 right: 0;
 width: 200px;
-background: var(--bg-secondary);
+background: white;
 border: 1px solid var(--border-color);
 border-radius: 8px;
 margin-top: 8px;

@@ -209,7 +209,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle language selection
     languageOptions.querySelectorAll('li').forEach(option => {
-        option.addEventListener('click', () => {
+        option.addEventListener('click', (event) => {
+            event.stopPropagation();
             const lang = option.getAttribute('value');
             changeLanguage(lang);
             languageSelect.textContent = option.textContent.trim();
