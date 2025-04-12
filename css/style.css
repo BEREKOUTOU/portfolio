@@ -147,7 +147,9 @@
     
     nav .social-media{
         display: flex;
-        gap: 5px;  
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
     
     nav .social-media a{  
@@ -229,6 +231,7 @@ border: 1px solid var(--border-color);
 border-radius: 8px;
 font-size: 14px;
 color: var(--text-primary);
+cursor: pointer;
 }
 
 .language-toggle i {
