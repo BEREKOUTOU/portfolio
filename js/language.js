@@ -37,7 +37,7 @@ const translations = {
         formEmail: "Courriel",
         formMessage: "Message",
         formSubmit: "Envoyer le message",
-        footerText: "Tous droits réservés."
+        footerText: "© 2024 BEREKOUTOU Boniface. Tous droits réservés.",
     },
     en: {
         about: "About",
@@ -77,7 +77,7 @@ const translations = {
         formEmail: "Email",
         formMessage: "Message",
         formSubmit: "Send message",
-        footerText: "All rights reserved."
+        footerText: "© All rights reserved. 2024 BEREKOUTOU Boniface.",
     },
     es: {
         about: "Sobre mí",
@@ -117,7 +117,7 @@ const translations = {
         formEmail: "Correo electrónico",
         formMessage: "Mensaje",
         formSubmit: "Enviar mensaje",
-        footerText: "Todos los derechos reservados."
+        footerText: "Todos los derechos reservados.   © 2024 BEREKOUTOU Boniface.",
     },
     ko: {
         about: "소개",
@@ -157,7 +157,7 @@ const translations = {
         formEmail: "이메일",
         formMessage: "메시지",
         formSubmit: "메시지 보내기",
-        footerText: "모든 권리 보유."
+        footerText: "모든 권리 보유. © 2024 BEREKOUTOU Boniface.",
     },
     ja: {
         about: "約",
@@ -197,7 +197,7 @@ const translations = {
         formEmail: "メール",
         formMessage: "メッセージ",
         formSubmit: "メッセージを送る",
-        footerText: "全著作権所有."
+        footerText: "全著作権所有. © 2024 BEREKOUTOU Boniface.",
     }
 };
 
