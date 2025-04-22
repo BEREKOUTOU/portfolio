@@ -510,11 +510,11 @@ border-color: var(--border-color-dark);
         padding-top: 100px;
         
     }
-    .container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 0 auto;
-    }
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 
     h2 {
         text-align: center;
