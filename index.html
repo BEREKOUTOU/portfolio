@@ -2,19 +2,20 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#000000">
-    <meta name="google-site-verification" content="your-google-site-verification-code" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BEREKOUTOU Boniface - Développeur Front-end">
+    <meta name="apple-mobile-web-app-title" content="BEREKOUTOU Boniface">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <meta name="keywords" content="BEREKOUTOU Boniface, Développeur Front-end, Portfolio, React, TypeScript, UI/UX Design">
     <meta name="author" content="BEREKOUTOU Boniface">
     <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="your-google-site-verification-code" />
     <meta name="author" content="BEREKOUTOU Boniface">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="BEREKOUTOU Boniface - Développeur Front-end">
     <meta property="og:description" content="BEREKOUTOU Boniface - Développeur Front-end">
-    <meta property="og:image" content="https://berkoutouboniface.com/images/hero.jpg">
+    <meta property="og:image" content="img/Bonifaces.webp">
     <meta property="og:url" content="https://berkoutouboniface.com">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="BEREKOUTOU Boniface - Développeur Front-end">
@@ -56,44 +57,45 @@
                 <a href="#">bb.</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#about" data-translate="about">À propos</a></li>
-                <li><a href="#Section-skills" data-translate="skills">Compétences</a></li>
-                <li><a href="#projects" data-translate="projects">Projets</a></li>
-                <li><a href="#contact" data-translate="contact">Interlocuteur</a></li>
-                <div>
-                    <a href="https://github.com/BEREKOUTOU"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:allahtoralphdjamel@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                </div>
+                <li class="link"><a href="#about" data-translate="about">À propos</a></li>
+                <li class="link"><a href="#Section-skills" data-translate="skills">Compétences</a></li>
+                <li class="link"><a href="#projects" data-translate="projects">Projets</a></li>
+                <li class="link"><a href="#contact" data-translate="contact">Interlocuteur</a></li>
+                <li class="social-links">
+                    <a href="https://github.com/BEREKOUTOU" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:allahtoralphdjamel@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                </li>
             </ul>
             <div class="social-media">
-                <a href="https://github.com/BEREKOUTOU"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:allahtoralphdjamel@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/BEREKOUTOU" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:allahtoralphdjamel@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
                 <!--settheme-->
-            <button class="theme-toggle">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-            </button>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
             </div>
         </nav>
         <!--setlanguage-->
-        <button type="button" role="dialog" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="language-select" class="language-toggle">
+        <button type="button" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="language-select" class="language-toggle">
             <i class="fa-solid fa-language"></i>
             <span id="language-select">Français</span>
-            <div role="listbox" class="language-options" style="display: none;">
-                <li role="option" value="fr"><img src="img/icons/fr.png" alt="Français"> Français</li>
-                <li role="option" value="en"><img src="img/icons/united-kingdom.png" alt="English"> English</li>
-                <li role="option" value="es"><img src="img/icons/spain.png" alt="Español"> Español</li>
-                <li role="option" value="ko"><img src="img/icons/south-korea.png" alt="Korean"> Korean</li>
-                <li role="option" value="ja"><img src="img/icons/japan.png" alt="Japanês"> Japanês</li>
-            </div>
             <span class="arrow"></span>
         </button>
+        <ul role="listbox" class="language-options" style="display: none;">
+            <li role="option" data-value="fr"><img src="img/img/fr.png" alt="Français"> Français</li>
+            <li role="option" data-value="en"><img src="img/img/united-kingdom.png" alt="English"> English</li>
+            <li role="option" data-value="es"><img src="img/img/spain.png" alt="Español"> Español</li>
+            <li role="option" data-value="ko"><img src="img/img/south-korea.png" alt="Korean"> Korean</li>
+            <li role="option" data-value="ja"><img src="img/img/japan.png" alt="Japanês"> Japanês</li>
+        </ul>
         <a href="#" class="toggle-button"><i class="fas fa-bars"></i></a>
     </header>
 
     <section class="hero">
+        <h2 class="sr-only">Hero Section</h2>
         <div class="hero-content">
             <div class="containers">
                 <div class="oaoFadeIn">
@@ -130,10 +132,10 @@
         <div class="flip-box">
             <div class="flip-box-inner">
                 <div class="flip-box-front">
-                    <img src="img/b3a86a7b90757853959952a0a0cd82cb.png" alt="">
+                    <img src="img/laptop.webp" width="400" height="400" title="laptop" alt="laptop" loading="lazy" class="d_block mx-auto mb-4" sizes="( max-width: 1920px ) 100vw, 1920px" srcset="img/laptop.webp 480w, img/laptop.webp 320w, img/laptop.webp 200w">
                 </div>
                 <div class="flip-box-back">
-                    <img src="img/Bonifaces.JPG" alt=" Bonifaces">
+                    <img src="img/Bonifaces.webp" width="621" height="270" title="Boniface" alt=" Bonifaces" loading="lazy" class="d_block mx-auto mb-4" sizes="( max-width: 1920px ) 100vw, 1920px" srcset="img/Bonifaces.webp 480w, img/Bonifaces.webp 320w, img/Bonifaces.webp 200w">
                 </div>
             </div>
         </div>    
@@ -167,26 +169,26 @@
             </div>
         </div>
     </section>
-    <section class="Section-skills" id="Section-skills">
+<section class="Section-skills" id="Section-skills">
         <div class="containerskills">
             <h2 data-translate="skillsTitle">Compétences</h2>
             <div class="skills-grid">
                 <div class="card">
                     <h4 data-translate="frontEnd">Front - end</h4>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 90%;"></span></div>
+                        <div class="skill-bar"><span data-width="90%"></span></div>
                         <div class="skill-label">React</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 80%;"></span></div>
+                        <div class="skill-bar"><span data-width="80%"></span></div>
                         <div class="skill-label">TypeScript</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 85%;"></span></div>
+                        <div class="skill-bar"><span data-width="85%"></span></div>
                         <div class="skill-label">Next.js</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 85%;"></span></div>
+                        <div class="skill-bar"><span data-width="85%"></span></div>
                         <div class="skill-label">Vue.js</div>
                     </div>
                 </div>
@@ -194,19 +196,19 @@
                 <div class="card">
                     <h4 data-translate="style">Style</h4>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 90%;"></span></div>
+                        <div class="skill-bar"><span data-width="90%"></span></div>
                         <div class="skill-label">CSS à vent de l'aune</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 85%;"></span></div>
+                        <div class="skill-bar"><span data-width="85%"></span></div>
                         <div class="skill-label">Sass</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 80%;"></span></div>
+                        <div class="skill-bar"><span data-width="80%"></span></div>
                         <div class="skill-label">CSS3</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 75%;"></span></div>
+                        <div class="skill-bar"><span data-width="75%"></span></div>
                         <div class="skill-label">Composants de style</div>
                     </div>
                 </div>
@@ -214,19 +216,19 @@
                 <div class="card">
                     <h4 data-translate="tools">Outils</h4>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 90%;"></span></div>
+                        <div class="skill-bar"><span data-width="90%"></span></div>
                         <div class="skill-label">Git</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 80%;"></span></div>
+                        <div class="skill-bar"><span data-width="80%"></span></div>
                         <div class="skill-label">Emballage Web</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 80%;"></span></div>
+                        <div class="skill-bar"><span data-width="80%"></span></div>
                         <div class="skill-label">Vite</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 75%;"></span></div>
+                        <div class="skill-bar"><span data-width="75%"></span></div>
                         <div class="skill-label">Jest</div>
                     </div>
                 </div>
@@ -234,19 +236,19 @@
                 <div class="card">
                     <h4 data-translate="conception">Conception</h4>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 90%;"></span></div>
+                        <div class="skill-bar"><span data-width="90%"></span></div>
                         <div class="skill-label">Figma</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 85%;"></span></div>
+                        <div class="skill-bar"><span data-width="85%"></span></div>
                         <div class="skill-label">Adobe XD</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 80%;"></span></div>
+                        <div class="skill-bar"><span data-width="80%"></span></div>
                         <div class="skill-label">Conception réactive</div>
                     </div>
                     <div class="skill">
-                        <div class="skill-bar"><span style="width: 85%;"></span></div>
+                        <div class="skill-bar"><span data-width="85%"></span></div>
                         <div class="skill-label">UI/UX</div>
                     </div>
                 </div>
@@ -259,8 +261,8 @@
         <p data-translate="projectsSubtitle">Voici quelques-uns des projets récents sur lesquels j'ai travaillé. Pour plus de projets, consultez mon profil GitHub.</p>
         <div class="projectss">
             <div class="project-card">
-                <img src="img/kasa.png" alt="Plateforme de commerce électronique">
-                <h4 data-translate="projectsCard1">Plateforme de commerce électronique</h4>
+                <img src="img/kasa.webp" width="400" height="400" title="location immobilière" alt="location immobilière" loading="lazy" class="d_block mx-auto mb-4" sizes="( max-width: 400px ) 100vw, 400px" srcset="img/kasa.webp 400w, img/kasa.webp 800w, img/kasa.webp 1200w">
+                <h4 data-translate="projectsCard1"> application web de location immobilière avec React </h4>
                 <p data-translate="projectsCard1Text">Une plateforme e-commerce moderne construite avec React et Next.js</p>
                 <div class="tags">
                     <span>React</span>
@@ -269,13 +271,13 @@
                     <span>Stripe</span>
                 </div>
                 <div class="links">
-                    <a href="#" class="btn"><i class="fa-brands fa-github"></i> Code</a>
-                    <a href="#" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                    <a href="https://github.com/..." target="_blank" class="btn"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="https://github.com/..." target="_blank" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
                 </div>
             </div>
             <div class="project-card">
-                <img src="img/argentbanck.png" alt="Tableau de bord Analyses">
-                <h4 data-translate="projectsCard2">Tableau de bord Analyses</h4>
+                <img src="img/argentbank.webp" width="400" height="400" title="argentbanck" alt="argentbanck" loading="lazy" class="d_block mx-auto mb-4" sizes="( max-width: 400px ) 100vw, 400px" srcset="img/argentbank.webp 400w, img/argentbank.webp 800w, img/argentbank.webp 1200w">
+                <h4 data-translate="projectsCard2">Implémentez le front-end d'une application bancaire avec React</h4>
                 <p data-translate="projectsCard2Text">Tableau d'analyse de données avec visualisations interactives</p>
                 <div class="tags">
                     <span>React</span>
@@ -284,12 +286,12 @@
                     <span>Matériel-UI</span>
                 </div>
                 <div class="links">
-                    <a href="#" class="btn"><i class="fa-brands fa-github"></i> Code</a>
-                    <a href="#" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                    <a href="https://github.com/..." target="_blank" class="btn"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="https://tonapp.com" target="_blank" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
                 </div>
             </div>
             <div class="project-card">
-                <img src="img/netflix.png" alt="App des médias sociaux">
+                <img src="img/netflix.webp" width="400" height="400" title="App des médias sociaux" alt="App des médias sociaux" loading="lazy" class="d_block mx-auto mb-4" sizes="( max-width: 400px ) 100vw, 400px" srcset="img/netflix.webp 400w, img/netflix.webp 800w, img/netflix.webp 1200w">
                 <h4 data-translate="projectsCard3">App des médias sociaux</h4>
                 <p data-translate="projectsCard3Text">Application de réseau social avec fonctionnalités en temps réel</p>
                 <div class="tags">
@@ -299,8 +301,8 @@
                     <span>Redux</span>
                 </div>
                 <div class="links">
-                    <a href="#" class="btn"><i class="fa-brands fa-github"></i> Code</a>
-                    <a href="#" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                    <a href="https://github.com/" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="https://tonapp.com" target="_blank" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
                 </div>
             </div>
         </div>
@@ -342,9 +344,9 @@
                 <p  data-translate="heroTitle" class="role">Développeur Front - end</p>
             </div>
             <div class="footer-social">
-                <a href="https://github.com/BEREKOUTOU"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:allahtoralphdjamel@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/BEREKOUTOU" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/berekoutou-boniface-6b1b5a1b9/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:allahtoralphdjamel@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -352,7 +354,7 @@
         </div>
     </footer>
     <!-- Scroll to Top Button -->
-    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></a>   
     <!-- Script -->
     <script src="js/dropmenu.js"></script>
     <script src="js/scroll.js"></script>

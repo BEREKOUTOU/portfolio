@@ -1,4 +1,4 @@
-    /*==global==*/
+    /*reset & base*/
     * {
         margin: 0;
         padding: 0;
@@ -11,7 +11,7 @@
         width: 100%;            
     }
    
-   /*==loader===*/
+   /*loader*/
     .loader {
     position: absolute;
     top: 0;
@@ -45,7 +45,6 @@
     display: grid;
     border-radius: 50%;
     -webkit-mask: radial-gradient(farthest-side,#0000 40%,#000 41%);
-    mask: radial-gradient(farthest-side,#0000 40%,#000 41%);
     background: linear-gradient(0deg ,#766DF480 50%,#766DF4FF 0) center/4px 100%,
       linear-gradient(90deg,#766DF440 50%,#766DF4BF 0) center/100% 4px;
     background-repeat: no-repeat;
@@ -161,7 +160,7 @@
         box-sizing: border-box;
         transform: translateX(-100%);
     }
-    .nav-links div{
+    .nav-links .social-links{
         display: none;
         padding-top: 10px;
         gap: 5px;
@@ -174,18 +173,18 @@
         transition: all .3s ease-in-out;
     }
     
-    nav ul li a:hover{
+    nav ul .link a:hover{
         background-color: #fff;
         color: #007bff;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
-    nav ul li a:hover::before{
+    nav ul .link a:hover::before{
         border-color: #262626;
         height: 100%;
         transform: translateX(0);
         transition: .3s transform linear, .3s height linear .3s;
     }
-    nav ul li a:hover::after{
+    nav ul .link a:hover::after{
         border-color: #262626;
         height: 100%;
         transform: translateX(0);
@@ -295,8 +294,8 @@ margin-left: 8px;
 .language-options {
 display: none;
 position: absolute;
-top: 160%;
-right: 0;
+top: 105%;
+right: 5%;
 width: 200px;
 background: white;
 border: 1px solid var(--border-color);
@@ -678,13 +677,15 @@ border-color: var(--border-color-dark);
         height: 8px;
     }
 
-    .skill-bar span {
-        display: block;
-        position: absolute;
-        background: #000;
-        height: 100%;
-        border-radius: 4px;
-    }
+.skill-bar span {
+    display: block;
+    position: absolute;
+    background: #000;
+    height: 100%;
+    border-radius: 4px;
+    width: 0; /* initial width 0 for animation */
+    transition: width 2s ease-in-out; /* smooth width transition */
+}
 
     .skill-label {
         font-size: 0.8rem;
@@ -974,10 +975,21 @@ border-color: var(--border-color-dark);
             transition: transform .3s ease-in-out;
             z-index: 1;
         }
-        .nav-links div{
+        .nav-links .social-links{
+            width: 50%;
             display: flex;
+            justify-content: center;
+            align-items: center;
             color: #555;
-         
+            padding: 0;
+            margin: 10px; 
+        }
+        .nav-links .social-links a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
         }
         header .social-media{
             display: none;
