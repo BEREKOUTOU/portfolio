@@ -81,7 +81,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        padding: 10px;
+        margin-bottom: 50px;
         background-color: #fff;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
@@ -353,9 +354,9 @@ border-color: var(--border-color-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
+    padding: 50px ;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 60px auto;
 }
 
 .hero-content {
@@ -555,6 +556,7 @@ border-color: var(--border-color-dark);
         max-width: 1140px;
         margin: 0 auto;
         padding-top: 100px;
+        padding-bottom: 100px;
         
     }
 .container {

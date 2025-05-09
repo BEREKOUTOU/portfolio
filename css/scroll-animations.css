@@ -1,0 +1,15 @@
+/* Scroll animation smoothness and visibility classes */
+.animate-hidden {
+  opacity: 1;
+  transition: opacity 0.6s ease-out;
+}
+
+.animate-visible {
+  opacity: 1;
+  transition: opacity 0.6s ease-out;
+}
+
+.animate__animated {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}

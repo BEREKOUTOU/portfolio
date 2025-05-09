@@ -14,3 +14,36 @@
     transform: translate3d(0, 0, 0);
   }
 }
+/* animate__àpropos*/
+
+.d_flex {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: animate__slideInUp;
+}
+.d_flex1 {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: animate__slideInUp;
+}
+.d_flex2 {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: animate__slideInUp;
+}
+
+/* animate__fadeIn*/
+.fade-in {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: animate__fadeIn;
+}
+@keyframes animate__fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

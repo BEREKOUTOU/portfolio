@@ -64,24 +64,48 @@ function animateSkills() {
 window.addEventListener('scroll', animateSkills);
 window.addEventListener('load', animateSkills);
 
-// New code to add fadeOutTop animation to sections on scroll out of view
-const sections = document.querySelectorAll('section');
 
-function handleFadeOutTop() {
-  sections.forEach((section) => {
-    const rect = section.getBoundingClientRect();
-    // If section bottom is less than 100px from top, add fadeOutTop
-    if (rect.bottom < 100) {
-      if (!section.classList.contains('fadeOutTop')) {
-        section.classList.add('fadeOutTop');
+// IntersectionObserver for smooth animations on scroll for about, skills, projects, contact items
+const animateOnScrollItems = [
+  ...document.querySelectorAll('#about .cardss'),
+  ...document.querySelectorAll('#Section-skills .card'),
+  ...document.querySelectorAll('#projects .project-card'),
+  ...document.querySelectorAll('#contact .contact-info, #contact .contact-form')
+];
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px 0px -200px 0px',
+  threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    console.log('IntersectionObserver entry:', entry.target, 'isIntersecting:', entry.isIntersecting);
+    if (entry.isIntersecting) {
+      const target = entry.target;
+      // Add animation classes
+      target.classList.add('animate__animated', 'animate__slideInUp');
+      // Make item visible
+      target.style.opacity = 1;
+      // Add staggered delay based on index among siblings
+      const parent = target.parentElement;
+      if (parent) {
+        const children = Array.from(parent.children);
+        const index = children.indexOf(target);
+        target.style.animationDelay = (index * 0.2) + 's';
       }
-    } else {
-      if (section.classList.contains('fadeOutTop')) {
-        section.classList.remove('fadeOutTop');
-      }
+      // Stop observing after animation triggered once
+      observer.unobserve(target);
     }
   });
-}
+}, observerOptions);
 
-window.addEventListener('scroll', handleFadeOutTop);
-window.addEventListener('load', handleFadeOutTop);
+window.addEventListener('load', () => {
+  animateOnScrollItems.forEach((item) => {
+    // Initially hide items (optional)
+    item.style.opacity = 0;
+    observer.observe(item);
+  });
+});
+ 
