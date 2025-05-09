@@ -943,7 +943,7 @@ border-color: var(--border-color-dark);
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background-color: #007bff;
+        background-color: #000000;
         color: #fff;
         padding: 10px 20px;
         border-radius: 5px;
