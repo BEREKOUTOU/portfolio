@@ -865,6 +865,7 @@ border-color: var(--border-color-dark);
       }
       
       .contact-form button {
+        width: 100%;
         background: #1a1a1a;
         color: #fff;
         border: none;
